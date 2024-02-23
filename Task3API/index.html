@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css">
+
+    <style>
+            section{
+                position: relative;
+                width: 100%;
+                padding: 0px 8% 20px ;
+            }
+            header h1{
+                        color: #8e44ad;
+                        font-size: 2em;
+                        margin: 30px 0px;
+            }
+
+
+    </style>
+
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Shoping Data</h1>
+        </header>
+
+        <!--Table Area-->
+        <table id="example" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </section>
+
+
+    <!--Js Library-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+
+    <script>
+            fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=>{
+                console.log(json);
+
+                displayProduct(json);
+            })
+
+            async function displayProduct(products){
+                let tab='';
+                await products.forEach((product, index, array) => {
+                  tab +='<tr>';
+                    tab += "<td><img src="+product["image"]+ " style='width:50px;height:50px;border-radius:50%' alt='' ></td>"
+                    tab += "<td>" +product["title"] + "</td>"
+                    tab += "<td>" +product["category"] + "</td>"
+                    tab += "<td>" +product["price"] + "</td>"
+                    tab +='</tr>';  
+
+                    document.querySelector('tbody').innerHTML= tab;
+
+                    new DataTable('#example');
+
+                })
+            }
+    </script>
+</body>
+</html>
