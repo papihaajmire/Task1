@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="Responsive.css">
+</head>
+<body>
+    <!-- for header -->
+    <header>
+        <div class="logosec">
+            <div class="logo">Smart School</div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                class="icn menuicn" id="menuicn" alt="menu-icon">
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+            <div class="searchbtn">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                    class="icn srchicn" alt="search-icon">
+            </div>
+        </div>
+        <div class="message">
+            <div class="circle"></div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png" class="icn" alt="">
+            <div class="dp">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                    class="dpicn" alt="dp">
+            </div>
+        </div>
+    </header>
+    <!--nav container  -->
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img" alt="dashboard">
+                            <!-- <h3 style="font-size: 22px;">Dashboard</h3> -->
+                            <button>Dashboard</button>
+                    </div>
+                    <!-- <div class="option2 nav-option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                            class="nav-img" alt="articles">
+                        <h3> Articles</h3>
+                    </div> -->
+                    <!-- <div class="nav-option option3">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+                            class="nav-img" alt="report">
+                        <h3>Report</h3>
+                    </div>  -->
+                    <div class="nav-option option4">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
+                            class="nav-img" alt="institution">
+                        <!-- <h3>Collage</h3> -->
+                        <button>Institution</button>
+                    </div>
+                    <div class="nav-option option5">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png"
+                            class="nav-img" alt="blog">
+                        <!-- <h3> Profile</h3> -->
+                        <button>Profile</button>
+                    </div>
+                    <div class="nav-option option6">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
+                            class="nav-img" alt="settings">
+                        <!-- <h3> Settings</h3> -->
+                        <button>Settings</button>
+                    </div>
+                    <div class="nav-option logout">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                            class="nav-img" alt="logout">
+                        <!-- <h3>Logout</h3> -->
+                        <button>Logout</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+<!-- main container -->
+        <div class="main">
+            <div class="searchbar2">
+                <input type="text" name="" id="" placeholder="Search">
+                <div class="searchbtn">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                        class="icn srchicn" alt="search-button">
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box box1">
+                    <div class="text">
+                        <h2 class="topic-heading">85.5k</h2>
+                        <h2 class="topic">School View</h2>
+                    </div>
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
+                        alt="Views">
+                </div>
+                <div class="box box2">
+                    <div class="text">
+                        <h2 class="topic-heading">150</h2>
+                        <h2 class="topic">Likes</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png" alt="likes">
+                </div>
+                <div class="box box3">
+                    <div class="text">
+                        <h2 class="topic-heading">320</h2>
+                        <h2 class="topic">Comments</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png"
+                        alt="comments">
+                </div>
+                <div class="box box4">
+                    <div class="text">
+                        <h2 class="topic-heading">70</h2>
+                        <h2 class="topic">Published</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published">
+                </div>
+            </div>
+            <div class="report-container" id="demo">
+                <div class="report-header">
+                    <h1 class="recent-Articles">Recent School</h1>
+                    <button class="view">View All</button>
+                </div>
+                <div class="report-body">
+                    <div class="report-topic-heading">
+                        <h3 class="t-op">School</h3>
+                        <h3 class="t-op" style="margin-left:20px ;">Views</h3>
+                        <h3 class="t-op">Comments</h3>
+                        <h3 class="t-op">Status</h3>
+                    </div>
+
+                    <div class="items">
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">Wise Wings</h3>
+                            <h3 class="t-op-nextlvl">2.9k</h3>
+                            <h3 class="t-op-nextlvl">210</h3>
+                            <h3 class="t-op-nextlvl label-tag">Published</h3>
+                        </div>
+
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">RoboGenius</h3>
+                            <h3 class="t-op-nextlvl">1.5k</h3>
+                            <h3 class="t-op-nextlvl">360</h3>
+                            <h3 class="t-op-nextlvl label-tag">Published</h3>
+                        </div>
+
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">S. T. Thoms</h3>
+                            <h3 class="t-op-nextlvl">1.1k</h3>
+                            <h3 class="t-op-nextlvl">150</h3>
+                            <h3 class="t-op-nextlvl label-tag">Published</h3>
+                        </div>
+
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">Drean Wave</h3>
+                            <h3 class="t-op-nextlvl">1.2k</h3>
+                            <h3 class="t-op-nextlvl">420</h3>
+                            <h3 class="t-op-nextlvl label-tag">Published</h3>
+                        </div>
+
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">Spark Nova</h3>
+                            <h3 class="t-op-nextlvl">2.6k</h3>
+                            <h3 class="t-op-nextlvl">190</h3>
+                            <h3 class="t-op-nextlvl label-tag">Published</h3>
+                        </div>
+
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">Genius Lab</h3>
+                            <h3 class="t-op-nextlvl">1.9k</h3>
+                            <h3 class="t-op-nextlvl">390</h3>
+                            <h3 class="t-op-nextlvl label-tag">Published</h3>
+                        </div>
+
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">Brainy Osis</h3>
+                            <h3 class="t-op-nextlvl">1.2k</h3>
+                            <h3 class="t-op-nextlvl">580</h3>
+                            <h3 class="t-op-nextlvl label-tag">Published</h3>
+                        </div>
+
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl"> Willow Glen</h3>
+                            <h3 class="t-op-nextlvl">3.6k</h3>
+                            <h3 class="t-op-nextlvl">160</h3>
+                            <h3 class="t-op-nextlvl label-tag">Published</h3>
+                        </div>
+
+                        <div class="item1">
+                            <h3 class="t-op-nextlvl">Little Feats</h3>
+                            <h3 class="t-op-nextlvl">1.3k</h3>
+                            <h3 class="t-op-nextlvl">220</h3>
+                            <h3 class="t-op-nextlvl label-tag">Published</h3>
+                        </div>
+
+                    </div>
+                </div>
+                 <div class="f">
+                    <h1 style="text-align: center;">BRANCH : SHAHEEN JUNIOR COLLAGE</h1>
+                    <div class="k">Staff Details</div>
+                    <form>
+                        <div class="container mt-8">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label for="Employee Status">Employee Status</label>
+                                    <br>
+                            <select name="" id="">
+                                <option value="Temporary">Temporary</option>
+                            </select>
+                            <br>
+                            <label for=""Required>Designation</label><br>
+                            <select name="" id="">
+                                <option value="">-Select Department</option>
+                            </select>
+                            <br>
+                            <label for=""Required>Trained As:*</label>
+                            <br>
+                            <select name="" id=""><option value="">-Select Level</option></select>
+                                </div> 
+                                <div class="col-sm-3">
+                                    <label for="">Staff Type:</label>
+                                    <br>
+                                    <input type="radio" name="Staff" value="Staff">
+                                    <label for="">Teaching</label>
+                                    <input type="radio" name="Staff" value="Staff">
+                                    <label for="">Non-Teaching</label>
+                                    <input type="radio" name="Staff" value="Staff">
+                                    <label for="">Transport</label>
+                                    <br>
+                                    <label for="" required>Qualification Type :*</label>
+                                    <select name="" id=""><option value="">-Select Qualification</option></select>
+                                    <br>
+                                    CTET Qualified :*
+                                    <br>
+                                    <input type="radio" name="Qualified" id="Qualified">
+                                    <label for="">Yes</label>
+                                    <input type="radio" name="Qualified" id="Qualified">
+                                    <label for="">No</label> 
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="">Staff Department :*</label>
+                            <select name="" id=""><option value="">-Select Department</option></select>
+                            <br>
+                            <label for="">Education Qualification:*</label>
+                           <select name="" id=""><option value="">-Select Qualification</option></select>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="">Employement Category :*</label>
+                            <select name="" id=""><option value="">-Select Category</option></select>
+                            <br>
+                            <label for="">Access Level :*</label>
+                            <select name="" id=""><option value="">-Select Access Level</option></select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>    
+                </div>
+                <div class="g">
+                    <div class="h">Personal Details</div>
+                    <form>
+                        <div class="container mt-8">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label for="" aria-required="true">First Name*</label>
+                                    <input type="text">
+                                    <br>
+                                    <label for="">Emergency Contact No.*</label>
+                                    <input type="text">
+                                    <label for="">Permanent Address</label>
+                                    <textarea name="" id=""></textarea>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="">Midle Name*</label>
+                                    <input type="text">
+                                    <br>
+                                    <label for="">Gender*</label>
+                                    <br>
+                                    <input type="radio" name="gender" value="gender" >
+                                    <label for="">Male</label>
+                                    <input type="radio" name="gender" value="gender" >
+                                    <label for="">Female</label>
+                                    <input type="radio" name="gender" value="gender">
+                                    <label for="">Other</label>
+                                    <br>
+                                    <label for="">Corresponding Address</label>
+                                    <textarea name="" id=""></textarea>
+                                    <br>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="">Last Name*</label>
+                                    <input type="text">
+                                    <br>
+                                    <label for="">Enter Date Of Birth:*</label>
+                                    <input type="date" name="" id="">
+                                    <br>
+                                    <label for="">Religion:*</label>
+                                    <br>
+                                    <select name="Hindu" id="Hindu"><option value="">Hindu</option></select>
+                                    <br>
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="">Mobile No.*</label>
+                                    <input type="number" name="" id="">
+                                    <br>
+                                    <label for="">Email Id:*</label>
+                                    <br>
+                                    <input type="email">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="i">
+                    <div class="j">Other Details</div>
+                    <form>
+                        <div class="container mt-8">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label for="">Adhar No:*</label>
+                                    <input type="text">
+                                    <br>
+                                    <label for="">Salary Pay Type</label>
+                                    <br>
+                                    <input type="radio" name="salary" value="salary" id="" >
+                                    <label for="">Consolidate</label>
+                                    <input type="radio" name="salary" value="salary" id="" >
+                                    <label for="">Pay</label>
+                                    <input type="radio" name="salary" value="salary" id="" >
+                                    <label for="">Other</label>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="">Pan No:*</label>
+                                        <br>
+                                        <input type="text">
+                                        <br>
+                                        <label for="">Government id/Resodent No.:*</label>
+                                        <br>
+                                        <input type="text">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="">Date Of Joining:*</label>
+                                        <br>
+                                        <input type="date" name="" id="">
+                                        <br>
+                                        <label for="">Citizenship</label>
+                                        <br>
+                                        <select name="" id=""><option value="">Indian</option></select>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <label for="">Stafe Refference Code:*</label>
+                                        <br>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+                    <button type="submit" style="background-color: orangered;color: white;margin: 10px;border-radius: 5px;">Save & Continue</button>
+                </div> 
+            </div>
+            
+        </div>
+    </div>
+        
+
+</body>
+</html>
